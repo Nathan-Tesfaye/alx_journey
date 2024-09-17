@@ -1,5 +1,11 @@
 /* below using the universal selector '*' we set the margin to 0, this is a reset used before building a website, this is because by default 
 browsers give style like chrom-margin-8px*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}   /*a must reset before building anything applies the box-sizing: border-box; property to all elements and their pseudo-elements.*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,14 +15,14 @@ browsers give style like chrom-margin-8px*/
     font-size: 2rem;
     background-color: pink;
     /* BOX MODEL */
-    width: 300px;
+    width: 300px; /*this width and heigt only apply to the content area in our box model we 'fix' this by applying the box-sizing property which applies it to everyting inside the div i.e the padding and the border*/
     height: 100px;
     /* padding-left: 32px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 32px; */
-    padding: 64px;
     border: 5px solid black;
+    padding: 20px;
     /* margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
